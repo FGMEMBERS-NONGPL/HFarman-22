@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>hfarman-22.ac</path>
+
+<effect>
+     <inherits-from>Effects/model-transparent</inherits-from>
+      <object-name>propdisc</object-name>
+      <object-name>propblur</object-name>
+    </effect>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>Canard</object-name>
+    <object-name>CanardBooms</object-name>
+    <object-name>SeatFrame</object-name>
+    <object-name>Fueltank</object-name>
+    <object-name>Enginemount</object-name>
+    <object-name>propengine</object-name>
+    <object-name>Lmidwing</object-name>
+    <object-name>Oiltank</object-name>
+    <object-name>Landingskids</object-name>
+    <object-name>Lwheeltruk</object-name>
+    <object-name>Rwheeltruk</object-name>
+    <object-name>leftstays</object-name>
+    <object-name>rightstays</object-name>
+    <object-name>Upmidwing</object-name>
+    <object-name>Upleftwing</object-name>
+    <object-name>Uprightwing</object-name>
+    <object-name>Loleftwing</object-name>
+    <object-name>Lorightwing</object-name>
+    <object-name>Upstabil</object-name>
+    <object-name>lostabil</object-name>
+    <object-name>elevator</object-name>
+    <object-name>Leftrudder</object-name>
+    <object-name>Rightrudder</object-name>
+    <object-name>joyfulcrum</object-name>
+    <object-name>Joystick</object-name>
+    <object-name>Leftoutwheel</object-name>
+    <object-name>Leftinwheel</object-name>
+    <object-name>Rightoutwheel</object-name>
+    <object-name>Rightinwheel</object-name>
+    <object-name>Leftupaileron</object-name>
+    <object-name>Leftloaileron</object-name>
+    <object-name>rightupaileron</object-name>
+    <object-name>Rightloaileron</object-name>
+    <object-name>upcanardcable</object-name>
+    <object-name>Locanardcable</object-name>
+    <object-name>Tailstrut</object-name>
+    <object-name>Tailwheel</object-name>
+    <object-name>rudderbar</object-name>
+
+    <object-name>Left1ruddcable</object-name>
+    <object-name>Right1ruddcable</object-name>
+    <object-name>Left2ruddcable</object-name>
+    <object-name>Right21ruddcable</object-name>
+    <object-name>ruddjoiner</object-name>
+    <object-name>Locanardcable</object-name>
+    <object-name>upelecables</object-name>
+    <object-name>loelevcables</object-name>
+    <object-name>upcanrdcables</object-name>
+    <object-name>locanrdcables</object-name>
+    <object-name>Rightinwheel</object-name>
+
+    <!-- Objets transparents -->
+    <object-name>propdisc</object-name>
+    <object-name>propblur</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>propdisc</object-name>
+  </animation>
+
+  <!-- pilot -->
+  <model>
+    <path>Aircraft/HFarman-22/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -1.463 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.051 </z-m>
+    </offsets>
+  </model>
+
+   <!-- observer -->
+  <model>
+    <path>Aircraft/HFarman-22/Models/Pilot/observer.xml</path>
+    <offsets>
+      <x-m> -0.773 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.051 </z-m>
+    </offsets>
+  </model>
+
+   <!-- panel -->
+  <model>
+    <path>Aircraft/HFarman-22/Models/Instruments/panel.xml</path>
+    <offsets>
+      <x-m> -0.085 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> 0.285 </z-m>
+    </offsets>
+  </model>
+
+    <!-- engine start -->
+  <model>
+    <path>Aircraft/HFarman-22/Models/Effects/cranking/cranking.xml</path>
+    <offsets>
+      <x-m> 1.325 </x-m>
+      <y-m> 0.362 </y-m>
+      <z-m> 0.204 </z-m>
+    </offsets>
+  </model>
+
+      <!-- engine smoke -->
+  <model>
+    <path>Aircraft/HFarman-22/Models/Effects/exhaust/exhaustsmoke.xml</path>
+    <offsets>
+      <x-m> 1.45 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> 0.4 </z-m>
+    </offsets>
+  </model>
+
+      <!-- water wakes -->
+  <model>
+    <path>Aircraft/HFarman-22/Models/Effects/Wakes/wakeGA.xml</path>
+    <offsets>
+      <x-m> 0.45 </x-m>
+      <y-m> -2.167 </y-m>
+      <z-m> -1.45 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/HFarman-22/Models/Effects/Wakes/waterGF.xml</path>
+    <offsets>
+      <x-m> 0.45 </x-m>
+      <y-m> -2.167 </y-m>
+      <z-m> -1.45 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/HFarman-22/Models/Effects/Wakes/wakeDA.xml</path>
+    <offsets>
+       <x-m> 0.45 </x-m>
+      <y-m> 2.167 </y-m>
+      <z-m> -1.45 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/HFarman-22/Models/Effects/Wakes/waterDF.xml</path>
+    <offsets>
+       <x-m> 0.45 </x-m>
+      <y-m> 2.167 </y-m>
+      <z-m> -1.45 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/HFarman-22/Models/Effects/Wakes/wake.xml</path>
+    <offsets>
+      <x-m> 6.45 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> 0.64 </z-m>
+    </offsets>
+  </model>
+
+   <model>
+    <path>Aircraft/HFarman-22/Models/Effects/Wakes/water.xml</path>
+    <offsets>
+      <x-m> 6.45 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m> 0.64 </z-m>
+    </offsets>
+  </model>
+  
+
+  <!-- engine and propeller --> 
+  <animation>
+    <name>PropComplete</name>
+    <object-name>lerhone14c</object-name>
+    <object-name>propeller</object-name> 
+    <object-name>propdisc</object-name>
+    <object-name>bol</object-name>
+    <object-name>propshaft</object-name>
+  </animation>
+
+  <!-- select prop disc -->
+  <animation>
+    <type>select</type>
+    <object-name>propdisc</object-name>
+    <condition>
+      <greater-than>
+        <property>engines/engine[0]/rpm</property>
+        <value>450</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>propeller</object-name>
+    <condition>
+      <less-than>
+        <property>engines/engine[0]/rpm</property>
+	<value>450</value>
+      </less-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>PropComplete</object-name>
+    <condition>
+      <greater-than>
+        <property>engines/engine[0]/rpm</property>
+        <value> 20 </value>
+      </greater-than>
+    </condition>
+    <property>engines/engine[0]/rpm</property>
+    <factor> 1 </factor>
+    <center>
+      <x-m> 1.12335 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.44109 </z-m>
+    </center>
+    <axis>
+      <x>  1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- rudders and animations -->
+  <animation>
+    <name>rudder-cables</name>
+    <object-name>rudder</object-name>
+    <object-name>L-ruddcable</object-name>
+    <object-name>R-ruddcable</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>rudder-cables</object-name>
+    <property>controls/flight/rudder</property>
+    <factor>20</factor>
+    <center>
+      <x-m>  6.608 </x-m>
+      <y-m> 0.0 </y-m>
+      <z-m>  0.725 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>L-ruddcable</object-name>
+    <property>controls/flight/rudder</property>
+    <factor>20.4</factor>
+    <center>
+      <x-m>  6.608 </x-m>
+      <y-m> -0.3902 </y-m>
+      <z-m>  0.7352 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> -1 </z>
+    </axis>
+  </animation>
+
+    <animation>
+    <type>rotate</type>
+    <object-name>R-ruddcable</object-name>
+    <property>controls/flight/rudder</property>
+    <factor>20.4</factor>
+    <center>
+      <x-m>  6.608 </x-m>
+      <y-m> 0.3902 </y-m>
+      <z-m> 0.7352 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> -1 </z>
+    </axis>
+  </animation>
+
+  <!-- Elevator and canard -->
+  <animation>
+    <name>elevatorcables</name>
+    <object-name>leftelev</object-name>
+    <object-name>rightelev</object-name>
+    <object-name>upelev-cables</object-name>
+    <object-name>lowelev-cables</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>elevatorcables</object-name>
+    <property>/controls/flight/elevator</property>
+    <factor>15</factor>
+    <center>
+      <x-m>  6.6254 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  1.4818 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+   <animation>
+    <type>rotate</type>
+    <object-name>upelev-cables</object-name>
+    <property>/controls/flight/elevator</property>
+    <factor>15</factor>
+    <center>
+      <x-m>  6.6192 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  1.6996 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+   <animation>
+    <type>rotate</type>
+    <object-name>lowelev-cables</object-name>
+    <property>/controls/flight/elevator</property>
+    <factor>15</factor>
+    <center>
+      <x-m>  6.617 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  1.2583 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+
+  <!-- Ailerons Animations -->
+
+    <animation>
+    <name>leftaileron-cables</name>
+    <object-name>leftaileron</object-name>
+    <object-name>Lupail-cable</object-name>
+    <object-name>Llowail-cable</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>leftaileron-cables</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <interpolation>
+      <entry><ind>  1 </ind><dep> 15 </dep></entry>
+      <entry><ind>  0 </ind><dep>  0 </dep></entry>
+      <entry><ind> -1 </ind><dep>  -15 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.645 </x-m>
+      <y-m> -7.089 </y-m>
+      <z-m>  1.2585 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> -0.024 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Lupail-cable</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor>15</factor>
+    <center>
+      <x-m>  0.661 </x-m>
+      <y-m>  -7.043 </y-m>
+      <z-m>  1.399 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+   <animation>
+    <type>rotate</type>
+    <object-name>Llowail-cable</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor>15</factor>
+    <center>
+      <x-m>  0.790 </x-m>
+      <y-m>  -7.043 </y-m>
+      <z-m>  1.239 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <name>rightaileron-cables</name>
+    <object-name>rightaileron</object-name>
+    <object-name>Rupail-cable</object-name>
+    <object-name>Rlowail-cable</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>rightaileron-cables</object-name>
+    <property>surface-positions/right-aileron-pos-norm</property>
+    <interpolation>
+      <entry><ind>  1 </ind><dep> 15 </dep></entry>
+      <entry><ind>  0 </ind><dep>  0 </dep></entry>
+      <entry><ind> -1 </ind><dep>  -15 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.645 </x-m>
+      <y-m>  7.089 </y-m>
+      <z-m>  1.2585 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0.024 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Rupail-cable</object-name>
+    <property>surface-positions/right-aileron-pos-norm</property>
+    <factor>15</factor>
+    <center>
+      <x-m>  0.661 </x-m>
+      <y-m>  7.043 </y-m>
+      <z-m>  1.399 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Rlowail-cable</object-name>
+    <property>surface-positions/right-aileron-pos-norm</property>
+    <factor>15</factor>
+    <center>
+      <x-m>  0.790 </x-m>
+      <y-m>  7.043 </y-m>
+      <z-m>  1.239 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+<!-- Left Gear compression -->
+
+<animation>
+    <name>LeftfloatAssemb</name>
+    <object-name>L-float</object-name>
+    <object-name>L-floatfrontshock</object-name> 
+    <object-name>L-floatrearshock</object-name>
+  </animation>
+
+ <animation>
+  <type>rotate</type>
+  <property>gear/gear[1]/compression-norm</property>
+  <object-name>LeftfloatAssemb</object-name>
+  <interpolation>
+   <entry> <ind>0.0</ind> <dep> 0</dep> </entry>
+   <entry> <ind>0.33</ind> <dep>-2</dep> </entry>
+   <entry> <ind>0.66</ind> <dep>-4</dep> </entry>
+   <entry> <ind>1.0</ind> <dep>-6</dep> </entry>
+  </interpolation>
+  <center>
+   <x-m>-0.2362</x-m>
+   <y-m> 0.00</y-m>
+   <z-m>-0.9026</z-m>
+  </center>
+  <axis>
+   <x> 1.00</x>
+   <y> 0.00</y>
+   <z> 0.00</z>
+  </axis> 
+ </animation>
+
+<!-- Right Gear compression -->
+
+<animation>
+    <name>RightfloatAssemb</name>
+    <object-name>Rfloat</object-name>
+    <object-name>R-floatfrontshock</object-name> 
+    <object-name>R-floatrearshock</object-name>
+  </animation>
+
+ <animation>
+  <type>rotate</type>
+  <property>gear/gear[3]/compression-norm</property>
+  <object-name>RightfloatAssemb</object-name>
+  <interpolation>
+   <entry> <ind>0.0</ind> <dep> 0</dep> </entry>
+   <entry> <ind>0.33</ind> <dep>2</dep> </entry>
+   <entry> <ind>0.66</ind> <dep>4</dep> </entry>
+   <entry> <ind>1.0</ind> <dep>6</dep> </entry>
+  </interpolation>
+  <center>
+   <x-m>-0.2362</x-m>
+   <y-m> 0.00</y-m>
+   <z-m>-0.9026</z-m>
+  </center> 
+  <axis>
+   <x> 1.00</x>
+   <y> 0.00</y>
+   <z> 0.00</z>
+  </axis> 
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <property>gear/gear[4]/compression-norm</property>
+  <object-name>skid</object-name>
+  <interpolation>
+   <entry> <ind>0.0</ind> <dep> 0</dep> </entry>
+   <entry> <ind>0.33</ind> <dep>2</dep> </entry>
+   <entry> <ind>0.66</ind> <dep>4</dep> </entry>
+   <entry> <ind>1.0</ind> <dep>8</dep> </entry>
+  </interpolation>
+  <axis>
+   <x> 0.00</x>
+   <y> 0.00</y>
+   <z> 1.00</z>
+  </axis>
+  <center>
+   <x-m> 4.627</x-m>
+   <y-m> 0.0</y-m>
+   <z-m>-0.798002</z-m>
+  </center> 
+ </animation>
+
+
+</PropertyList>
+
